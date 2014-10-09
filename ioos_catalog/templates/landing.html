@@ -6,7 +6,7 @@
 
 {% block page %}
 
-<div class="container">
+<div class="container container-xs-height">
   <div class="row">
     <div class="col-sm-12 col-md-12 welcome">
       <h1>Welcome</h1>
@@ -14,20 +14,50 @@
     </div> <!-- welcome -->
   </div> <!-- row -->
   <div class="row img-block">
-    <div class="col-xs-12 col-md-4 smpadding">
-      <div class="img-text">
+    <div class="col-md-6 col-xs-6 col-xs-height">
+      <div class="item i1">
         <a href="{{url_for('gliders')}}">
-          <img class="img-responsive" src="{{url_for('static', filename='img/landing/glider.png')}}" alt="Gliders"></img>
+          <img class="img-responsive" alt="Glider" src="{{url_for('static',filename='img/landing/glider.png')}}"></img>
         </a>
-        <div class="overlay">
+        <div class="overlay overlay-shadow">
           <a href="{{url_for('gliders')}}">
             Gliders
           </a>
         </div>
       </div>
-      <div class="img-text">
+    </div>
+    <div class="col-md-6 col-xs-6 col-xs-height">
+      <div class="item i1">
+        <a href="{{url_for('by_the_numbers')}}">
+          <img class="img-responsive" alt="By the numbers" src="{{url_for('static',filename='img/landing/btn.png')}}"></img>
+        </a>
+        <div class="overlay overlay-shadow">
+          <a href="{{url_for('by_the_numbers')}}">
+            By the numbers
+          </a>
+        </div>
+      </div>
+    </div>
+  </div> <!-- row -->
+  <div class="row row-xs-height img-block">
+    <div class="col-md-12 col-xs-12 col-xs-height">
+      <div class="item i2">
+        <a href="{{url_for('catalog_map')}}">
+          <img class="img-responsive" alt="Glider" src="{{url_for('static',filename='img/landing/earth.png')}}"></img>
+        </a>
+        <div class="overlay">
+          <a href="{{url_for('catalog_map')}}">
+            Catalog Map
+          </a>
+        </div>
+      </div>
+    </div>
+  </div> <!-- row -->
+  <div class="row row-xs-height img-block">
+    <div class="col-md-4 col-xs-4 col-xs-height">
+      <div class="item i1">
         <a href="{{url_for('featured_maps')}}">
-          <img class="img-responsive spad" src="{{url_for('static', filename='img/landing/bathy.png')}}" alt="Featured Maps"></img>
+          <img class="img-responsive" alt="Featured Maps" src="{{url_for('static',filename='img/landing/map.png')}}"></img>
         </a>
         <div class="overlay">
           <a href="{{url_for('featured_maps')}}">
@@ -35,9 +65,23 @@
           </a>
         </div>
       </div>
-      <div class="img-text">
+    </div>
+    <div class="col-md-4 col-xs-4 col-xs-height">
+      <div class="item i1">
+        <a href="{{url_for('inventory')}}">
+          <img class="img-responsive" alt="Inventory" src="{{url_for('static',filename='img/landing/inventory.png')}}"></img>
+        </a>
+        <div class="overlay overlay-dark">
+          <a href="{{url_for('inventory')}}">
+            Catalog Inventory
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 col-xs-4 col-xs-height">
+      <div class="item i1">
         <a href="{{url_for('help_download')}}">
-          <img class="img-responsive spad" src="{{url_for('static', filename='img/landing/map.png')}}" alt="Download Help"></img>
+          <img class="img-responsive" alt="Help" src="{{url_for('static',filename='img/landing/wave.png')}}"></img>
         </a>
         <div class="overlay">
           <a href="{{url_for('help_download')}}">
@@ -45,53 +89,10 @@
           </a>
         </div>
       </div>
-    </div> <!-- col -->
-    <div class="col-xs-12 col-md-8 smpadding">
-      <div class="row">
-        <div class="col-xs-12 col-md-12">
-          <div class="img-text">
-            <a href="{{url_for('catalog_map')}}">
-              <img class="img-responsive" src="{{url_for('static', filename='img/landing/earth.png')}}" alt="Catalog Map"></img>
-            </a>
-            <div class="dynamic-overlay">
-              <h5>{{ total_datasets | safe }} Datasets | {{ total_services | safe }} Services</h5>
-            </div>
-            <div class="overlay overlay-map">
-              <a href="{{url_for('catalog_map')}}">
-                Catalog Map
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row row-top-pad">
-        <div class="col-xs-6 col-md-6 smapdding">
-          <div class="img-text">
-            <a href="{{url_for('by_the_numbers')}}">
-              <img class="img-responsive mpad" src="{{url_for('static', filename='img/landing/btn.png')}}" alt="By the numbers"></img>
-            </a>
-            <div class="overlay overlay-sq">
-              <a href="{{url_for('by_the_numbers')}}">
-                IOOS By The Numbers
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col-xs-6 col-md-6 smpadding">
-          <div class="img-text">
-            <a href="{{url_for('inventory')}}">
-              <img class="img-responsive mpad" src="{{url_for('static', filename='img/landing/wave.png')}}" alt="Catalog Inventory"></img>
-            </a>
-            <div class="overlay overlay-sq">
-              <a href="{{url_for('inventory')}}">
-                Catalog Inventory
-              </a>
-            </div> <!-- overlay -->
-          </div> <!-- img-text -->
-        </div> <!-- col -->
-      </div> <! -- row -->
-    </div> <!-- col -->
+    </div>
   </div> <!-- row -->
+  
+ <!-- row -->
   <div class="row news">
     <div class="col-sm-12 col-md-6"> <!-- social media -->
       <h1> SOCIAL MEDIA </h1>

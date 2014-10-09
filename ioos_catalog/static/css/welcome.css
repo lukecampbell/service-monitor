@@ -110,11 +110,9 @@
     padding: 10px;
     letter-spacing: -1px;
     position: absolute;
-    top: 70%;
-    width: 100%;
-    background: rgb(0, 0, 0); /* fallback color */
-    background: rgba(0, 0, 0, 0.4);
+    top: 80%;
 }
+
 
 .overlay.overlay-map {
     top: 80%;
@@ -147,6 +145,25 @@
 
 .overlay a:active {
     text-decoration: none;
+}
+
+.overlay.overlay-dark {
+    color: black;
+}
+
+
+.overlay.overlay-dark a {
+    color: black;
+}
+
+.overlay.overlay-shadow {
+    text-shadow: 2px 2px #333;
+    color: white;
+}
+
+
+.overlay.overlay-shadow a {
+    color: white;
 }
 
 .dynamic-overlay {
@@ -184,6 +201,14 @@
    background: rgb(0, 0, 0); /* fallback color */
    background: rgba(0, 0, 0, 0.7);
    padding: 10px; 
+}
+
+.item {
+    background: #c09;
+}
+
+.item.i1 {
+    background: #00da0f;
 }
 
 
