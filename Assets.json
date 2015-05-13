@@ -13,6 +13,9 @@
         "ioos_catalog/static/lib/underscore/underscore.js",
         "ioos_catalog/static/lib/backbone/backbone.js",
 
+        "ioos_catalog/static/js/models/DatasetModel.js",
+        "ioos_catalog/static/js/models/ResolverModel.js",
+
         "ioos_catalog/static/js/views/NavbarView.js",
         "ioos_catalog/static/js/views/ResolverView.js",
 

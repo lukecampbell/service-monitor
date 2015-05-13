@@ -12,12 +12,13 @@ _.extend(App.prototype, {
     navbarView: null
   },
   collections: {},
-  models: {},
+  models: {
+    resolverModel: null,
+  },
   start: function() {
-
+    var self = this;
     var url = window.location.href;
     var query = url.substring(url.lastIndexOf("/")+1, url.length);
-    console.log(query);
     /* Views */
     this.views.navbarView = new NavbarView({
       el: $('#navbar-view')
@@ -26,7 +27,17 @@ _.extend(App.prototype, {
       el: $('#resolver-view')
     });
     this.views.resolverView.render();
-    console.log("Resolver started");
+    /* Models */
+    this.models.resolverModel = new ResolverModel();
+    this.models.resolverModel.url = "/api/resolver/asset/" + query;
+    
+    var modelFetch = this.models.resolverModel.fetch({error: function() {
+      $('#resolver-view').html("<h1>Not Found</h1>");
+    }});
+    $.when(modelFetch).done(function() {
+      var url = "/datasets/" + self.models.resolverModel.get('_id');
+      window.location.href = url;
+    });
   }
 });
 
