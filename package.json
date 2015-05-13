@@ -1,0 +1,35 @@
+{
+  "name": "ioos-catalog",
+  "version": "3.3.0",
+  "description": "Data catalog for IOOS Data Sources",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ioos/catalog"
+  },
+  "author": "Luke Campbell",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ioos/catalog/issues"
+  },
+  "homepage": "https://github.com/ioos/catalog",
+  "dependencies": {
+    "grunt": "^0.4.5",
+    "grunt-concat-css": "^0.3.1",
+    "grunt-contrib-concat": "^0.5.1",
+    "grunt-contrib-cssmin": "^0.12.3",
+    "grunt-contrib-jst": "^0.6.0",
+    "grunt-contrib-less": "^1.0.1",
+    "grunt-contrib-uglify": "^0.9.1",
+    "grunt-contrib-watch": "^0.6.1"
+  },
+  "devDependencies": {
+    "bower": "^1.4.1"
+  }
+}

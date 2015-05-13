@@ -1,0 +1,22 @@
+{
+  "name": "ioos-catalog",
+  "version": "3.3.0",
+  "homepage": "https://github.com/ioos/catalog",
+  "authors": [
+    "Luke Campbell <luke.s.campbell@gmail.com>"
+  ],
+  "description": "IOOS Catalog",
+  "license": "MIT",
+  "dependencies": {
+    "bower": "*",
+    "jquery": "~2.1.4",
+    "underscore": "~1.8.3",
+    "backbone": "~1.1.2",
+    "fontawesome": "~4.3.0",
+    "bootstrap": "~3.3.4",
+    "chosen-bootstrap": "~1.0.4"
+  },
+  "resolutions": {
+    "bootstrap": "~3.3.4"
+  }
+}

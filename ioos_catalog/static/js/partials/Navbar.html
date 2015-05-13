@@ -1,0 +1,46 @@
+  <nav class="navbar navbar-custom">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nb-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-img-brand" href="/">
+          <img src="<%= navbar_img %>" alt="IOOS Catalog" />
+        </a>
+        <a class="navbar-brand" href="/">
+          Catalog
+        </a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="nb-collapse">
+        <ul class="nav navbar-nav">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Explore <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li role="presentation" class="dropdown-header">IOOS Catalog</li>
+              <li><a href="<%= inventory_link %>">Catalog Inventory</a></li>
+              <li><a href="<%= services_link %>">Services</a></li>
+              <li><a href="<%= datasets_link %>">Datasets</a></li>
+              <li><a href="<%= gliders_link %>">Gliders</a></li>
+
+              <li role="presentation" class="dropdown-header">Regional Associations</li>
+              <% _.each(ra_providers, function(provider_url, provider) { %>
+              <li><a href="<%= provider_url %>"><%= provider %></a></li>
+              <% }); %>
+              <li role="presentation" class="dropdown-header">National Partners</li>
+              <% _.each(national_partners, function(provider_url, provider) { %>
+              <li><a href="<%= provider_url %>"><%= provider %></a></li>
+              <% }); %>
+            </ul>
+          </li>
+          <li><a href="<%= metadatas_link %>">Asset Inventory <span class="label label-info">ALPHA</span></a></li>
+          <li><a href="<%= catalog_map_link %>">Catalog Map </a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="<%= help_link %>">Help</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>

@@ -1,0 +1,31 @@
+{
+  "main": {
+    "jst": {
+      "ioos_catalog/static/js/partials/compiled/resolver.js": [
+        "ioos_catalog/static/js/partials/Navbar.html",
+        "ioos_catalog/static/js/partials/Resolver.html"
+      ]
+    },
+    "js": {
+      "ioos_catalog/static/js/compiled/resolver.js": [
+        "ioos_catalog/static/lib/jquery/dist/jquery.js",
+        "ioos_catalog/static/lib/bootstrap/dist/js/bootstrap.js",
+        "ioos_catalog/static/lib/underscore/underscore.js",
+        "ioos_catalog/static/lib/backbone/backbone.js",
+
+        "ioos_catalog/static/js/views/NavbarView.js",
+        "ioos_catalog/static/js/views/ResolverView.js",
+
+        "ioos_catalog/static/js/app/Resolver.js"
+      ]
+    },
+    "css": {
+      "ioos_catalog/static/css/compiled/resolver.css": [
+        "ioos_catalog/static/lib/bootstrap/dist/css/bootstrap.css",
+        "ioos_catalog/static/lib/fontawesome/css/font-awesome.css",
+        "ioos_catalog/static/lib/chosen-bootstrap/chosen.bootstrap.css",
+        "ioos_catalog/static/css/ism-style.css"
+      ]
+    }
+  }
+}
